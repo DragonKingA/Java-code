@@ -1,5 +1,6 @@
 public class six{
 	public static void main (String[] args){
+		//
 		int i1 = 100;
 		float f1 = 1.1f;
 		double d1 = 4.6;

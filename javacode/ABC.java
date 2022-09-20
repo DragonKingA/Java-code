@@ -7,11 +7,14 @@ public class ABC{
 		System.out.println("Fuck\tYou\tA");
 		System.out.println("\"League \\of\\\\ legends\"");
 		System.out.println("Demonds\rIS YOU");
-		System.out.println("ä¹¦å\n is krito");
+		System.out.println("ÊéÃû\n is krito");
 						/*
-						è¿™ä¸ªæ˜¯æ³¨é‡Š
-				        ä»¥ä¸‹ä¸ºä½œä¸š
+						Õâ¸öÊÇ×¢ÊÍ
+				        ÒÔÏÂÎª×÷Òµ
 						*/
-		System.out.println("ä¹¦å\tä½œè€…\tä»·æ ¼\té”€é‡\nä¸‰å›½\tç½—è´¯ä¸­\t120\t1000");
+		System.out.println("ÊéÃû\t×÷Õß\t¼Û¸ñ\tÏúÁ¿\nÈı¹ú\tÂŞ¹áÖĞ\t120\t1000");
+
+
+		
 	}
 }

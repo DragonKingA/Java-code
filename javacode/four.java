@@ -10,6 +10,8 @@ public class four{
         double n7 = 2.123456789012345678901234567890;
         double n9 = 2.1234567890123456;
         double n10= 2.123456789012342111111;
+        //long long numx=123333333;java没有long long int类型,只有C11后才有
+
 		System.out.println( n1 + "\n "+ n2 + n1);
 		System.out.println(n1 + "0" + n3);
 		System.out.println(n4);

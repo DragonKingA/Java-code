@@ -21,5 +21,9 @@ public class back{
  		//若除以2.0,则最终average= 9.5
  		System.out.println("average="+average);
 
+ 		int number[]=new int['a'];
+ 		//由于字符类型实质是一个整数，所以上述语句可以进行
+ 		//等价于int number[]=new int[97];
+
 	}
 }
