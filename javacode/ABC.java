@@ -2,6 +2,7 @@
  * @author LZL
  * @version 1.0
 */
+
 public class ABC{
 	public static void main(String[] args){
 		System.out.println("Fuck\tYou\tA");
