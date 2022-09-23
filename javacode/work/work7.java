@@ -4,7 +4,7 @@ public class work7{
 	
 	Scanner sc = new Scanner(System.in);
 	int exersize;
-	System.out.print("è¯·è¾“å…¥å¯¹åº”ç»ƒä¹ é¢˜é¢˜å·ï¼š");
+	System.out.print("ÇëÊäÈë¶ÔÓ¦Á·Ï°ÌâÌâºÅ£º");
 	exersize = sc.nextInt();
 	if (exersize == 1){
 //exersize 1 ==================================================================================================
@@ -15,11 +15,11 @@ public class work7{
 		boolean error0 = false;
 		double average,average0,score;
 	        AB:for(int i = 1 ; i <= 3 ; i++){
-	        	System.out.println("è¯·ä¾æ¬¡è¾“å…¥"+i+"ç­çš„5ååŒå­¦çš„æˆç»©:");
+	        	System.out.println("ÇëÒÀ´ÎÊäÈë"+i+"°àµÄ5ÃûÍ¬Ñ§µÄ³É¼¨:");
 	        	for(int i0 = 1 ; i0 <= 5 ; i0++){        		
-	        		score = sc.nextDouble();//åŠ ä¸ªèŒƒå›´
+	        		score = sc.nextDouble();//¼Ó¸ö·¶Î§
 	        		if(score < 0.0 || score > 100.0){
-	        			System.out.println("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¿è¡Œ");
+	        			System.out.println("ÊäÈë´íÎó£¬ÇëÖØĞÂÔËĞĞ");
 	        			error0 = true;
 	        			break AB;
 	        		}else if(score >= 60){
@@ -30,20 +30,20 @@ public class work7{
 	        	sum0 += sum;
 	        	amount0 += amount;
 	        	average = sum / 5.0;
-	        	System.out.println(i+"ç­çš„å¹³å‡åˆ†ä¸º"+average+"åˆ†");
-	                System.out.println(i+"ç­çš„åŠæ ¼äººæ•°ä¸º"+amount+"äºº");
+	        	System.out.println(i+"°àµÄÆ½¾ù·ÖÎª"+average+"·Ö");
+	                System.out.println(i+"°àµÄ¼°¸ñÈËÊıÎª"+amount+"ÈË");
 	                sum = 0;
 	                amount = 0;
 	        }
 			if(error0 == false){
 			average0 = sum0 / 15.0;
-			System.out.println("å…¨éƒ¨ç­çº§çš„å¹³å‡åˆ†ä¸º"+average0+"åˆ†");
-			System.out.println("å…¨éƒ¨ç­çº§çš„åŠæ ¼äººæ•°ä¸º"+amount0+"äºº");			
+			System.out.println("È«²¿°à¼¶µÄÆ½¾ù·ÖÎª"+average0+"·Ö");
+			System.out.println("È«²¿°à¼¶µÄ¼°¸ñÈËÊıÎª"+amount0+"ÈË");			
 			}
         
         }else if(exersize == 2){
 //exersize 2 ==================================================================================================
-		//è¾“å‡ºä¹ä¹ä¹˜æ³•è¡¨
+		//Êä³ö¾Å¾Å³Ë·¨±í
 		for(int i = 1; i <= 9; i++){
 			for(int j = 1;j<=i;j++){
 				System.out.print(j+"*"+i+"="+(i*j)+"\t");
@@ -57,16 +57,16 @@ public class work7{
 
 	}else if(exersize == 3){
 //exersize 3 ==================================================================================================                
-                System.out.print("è¯·é€‰æ‹©é‡‘å­—å¡”æ ·å¼ï¼ˆ1ä¸ºå®å¿ƒï¼Œ2ä¸ºç©ºå¿ƒï¼‰ï¼š");
+                System.out.print("ÇëÑ¡Ôñ½ğ×ÖËşÑùÊ½£¨1ÎªÊµĞÄ£¬2Îª¿ÕĞÄ£©£º");
                 int pattern = sc.nextInt();
-                System.out.print("è¯·è¾“å…¥é‡‘å­—å¡”å±‚æ•°ï¼š");
+                System.out.print("ÇëÊäÈë½ğ×ÖËş²ãÊı£º");
                 int stars,space,total;
-                int level = sc.nextInt();//æ€»æ ¼(æ˜Ÿæ˜Ÿ)æ•°total= 2*level - 1ï¼Œæ¯è¡Œæ˜Ÿæ˜Ÿæ•°stars=2*i - 1,æ¯è¡Œç©ºæ ¼æ•°space=æ€»æ ¼æ•°-æ¯è¡Œæ˜Ÿæ˜Ÿæ•°=total - stars
+                int level = sc.nextInt();//×Ü¸ñ(ĞÇĞÇ)Êıtotal= 2*level - 1£¬Ã¿ĞĞĞÇĞÇÊıstars=2*i - 1,Ã¿ĞĞ¿Õ¸ñÊıspace=×Ü¸ñÊı-Ã¿ĞĞĞÇĞÇÊı=total - stars
                 total = 2*level - 1;
                 A:for (int i = 1; i <= level; i++){
                 	stars = 2*i - 1;
-                	space = total - stars;//å–åŠ åˆ†åˆ«è¾“å‡º
-                	B:for(int z = 1; z <= total;z++){//æ¯æ ¼åˆ†åˆ«æ‰§è¡Œ
+                	space = total - stars;//È¡°ë ·Ö±ğÊä³ö
+                	B:for(int z = 1; z <= total;z++){//Ã¿¸ñ·Ö±ğÖ´ĞĞ
                 		if(pattern == 1){
 	                		if(z <= space/2){
 	                			System.out.print(" ");
@@ -95,7 +95,7 @@ public class work7{
                 			}
 
                 		}else{
-                			System.out.println("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¿è¡Œ");
+                			System.out.println("ÊäÈë´íÎó£¬ÇëÖØĞÂÔËĞĞ");
                 			break A;
                 		}
 
@@ -104,22 +104,22 @@ public class work7{
  
                 }
 
-//æ¯è¡Œå…ˆè¾“å‡º space/2 ä¸ªç©ºæ ¼ï¼Œåè¾“å‡ºstarsä¸ªæ˜Ÿæ˜Ÿï¼Œå†è¾“å‡ºspace/2 ä¸ªç©ºæ ¼ã€‚éšåæ¢è¡Œè¿›è¡Œä¸‹ä¸€è¡Œè¾“å‡º
+//Ã¿ĞĞÏÈÊä³ö space/2 ¸ö¿Õ¸ñ£¬ºóÊä³östars¸öĞÇĞÇ£¬ÔÙÊä³öspace/2 ¸ö¿Õ¸ñ¡£Ëæºó»»ĞĞ½øĞĞÏÂÒ»ĞĞÊä³ö
 
 
 
 		}else if(exersize == 4){
 //exersize 4 ==================================================================================================
-		//ç”»è±å½¢
+		//»­ÁâĞÎ
 		int stars,space,total;
-		System.out.print("è¯·è¾“å…¥è±å½¢é•¿åº¦ï¼š");
+		System.out.print("ÇëÊäÈëÁâĞÎ³¤¶È£º");
 		int length = sc.nextInt();
 		total = 2*length - 1;
 		int i = 1;
                 A1:for (; i <= length; i++){
                 	stars = 2*i - 1;
-                	space = total - stars;//å–åŠ åˆ†åˆ«è¾“å‡º
-                	B1:for(int z = 1; z <= total;z++){//æ¯æ ¼åˆ†åˆ«æ‰§è¡Œ
+                	space = total - stars;//È¡°ë ·Ö±ğÊä³ö
+                	B1:for(int z = 1; z <= total;z++){//Ã¿¸ñ·Ö±ğÖ´ĞĞ
         			if(z <= space/2){
         				System.out.print(" ");
         			}else if(z == space/2 + 1 || z == space/2 + stars){
@@ -132,9 +132,9 @@ public class work7{
                 }
                 i -= 2;
                 A2:while(i >= 1){
-                	for(int z = 1; z <= total;z++){//æ¯æ ¼åˆ†åˆ«æ‰§è¡Œ
+                	for(int z = 1; z <= total;z++){//Ã¿¸ñ·Ö±ğÖ´ĞĞ
 	                	stars = 2*i - 1;
-	                	space = total - stars;//å–åŠ åˆ†åˆ«è¾“å‡º
+	                	space = total - stars;//È¡°ë ·Ö±ğÊä³ö
         			if(z <= space/2){
         				System.out.print(" ");
         			}else if(z == space/2 + 1 || z == space/2 + stars){
@@ -154,7 +154,7 @@ public class work7{
 
 
 	}else{
-        	System.out.println("å¹¶æœªæŸ¥è¯¢åˆ°æ­¤é¢˜å·ï¼Œè¯·é‡æ–°è¿è¡Œ");
+        	System.out.println("²¢Î´²éÑ¯µ½´ËÌâºÅ£¬ÇëÖØĞÂÔËĞĞ");
         }
 	}
 
