@@ -4,7 +4,7 @@ public class ten {
 		int n2 = 1010;   //十进制
 		int n3 = 01010;  //八进制：满8进1,以数字0开头
 		int n4 = 0x10101;//十六进制：由0~9及A(10)~F(15)组成，满16进1
-		                         //以0x或0X开头，A~F不区分大小写
+		                 //以0x或0X开头，A~F不区分大小写
 		System.out.println("n1="+n1);//10
 		System.out.println("n2="+n2);//1010
 		System.out.println("n3="+n3);//520
