@@ -7,7 +7,6 @@ public class work9{
 		exersize = sc.nextInt();
 		if (exersize == 1){
 //exersize 1 ==================================================================================================
-		
 		int arr1[] = {10,12,45,90};
 		int arrAdd[]=new int[arr1.length + 1];//{10,12,23,45,90}
 		boolean Ifcontinue = true;

@@ -38,7 +38,7 @@ public class five{
         //2. byte[1]-->short[2]-->int[4]-->long[8]-->float[4]-->double[8]
         //精度小者可转化为精度大者，理解为5可以在更精的小数维度中看作5.0，
         //而5本可以在个位级中取得，也可以在容量更大的万级范围内取得，因此可以转换至大容量者
-
+        
         char r1 = 'a';//97
         int r2 = r1;
         System.out.println(r2);
